@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 /* font cohesion */
@@ -26,7 +27,7 @@ h2 {
 
 /* line height cohesion */
 p {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 /* link & emphasis color cohesion */
@@ -77,6 +78,7 @@ button {
   height: 30px;
   width: 100px;
   cursor: pointer;
+  font-size: 16px;
   border: none;
   border-radius: 20px;
   color: rgb(241, 201, 201);
@@ -95,7 +97,7 @@ button {
 }
 
 .header-main h2 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 30px;
 }
 

@@ -30,19 +30,13 @@ p {
   line-height: 30px;
 }
 
-/* link & emphasis color cohesion */
-a,
-b {
-  color: rgb(223, 39, 39);
-}
-
 /* container width cohesion */
 .header-main h1,
 .header-main h2,
 .introduction,
 .technical-skill,
 .job-experiences-container {
-  width: 50%;
+  width: 60%;
 }
 
 /* --- HEADER --- */
@@ -98,7 +92,12 @@ button {
 
 .header-main h2 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 40px;
+}
+.header-main b,
+.header-main a {
+  color: rgb(223, 39, 39);
+  font-size: 24px;
 }
 
 /* --- ABOUT ME --- */
@@ -136,12 +135,16 @@ button {
 
 .projects {
   width: 250px;
+  padding: 20px;
   display: grid;
   grid-gap: 20px;
+  background-color: rgb(223, 39, 39);
+  border-radius: 20px;
 }
 
-.projects h3 {
-  color: rgb(223, 39, 39);
+.projects h3,
+.projects a {
+  color: rgb(241, 201, 201);
 }
 
 /* --- EXPERIENCE --- */

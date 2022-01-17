@@ -1,0 +1,174 @@
+/* imported fonts */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); /* "Righteous", cursive */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); /* "Montserrat", sans-serif */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* font cohesion */
+.header-main h1,
+.about-me h2,
+.portfolio h2,
+.experience h2 {
+  font-family: "Righteous", cursive;
+}
+
+/* font size cohesion */
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 40px;
+}
+
+/* line height cohesion */
+p {
+  line-height: 25px;
+}
+
+/* link & emphasis color cohesion */
+a,
+b {
+  color: rgb(223, 39, 39);
+}
+
+/* container width cohesion */
+.header-main h1,
+.header-main h2,
+.introduction,
+.technical-skill,
+.job-experiences-container {
+  width: 50%;
+}
+
+/* --- HEADER --- */
+header {
+  display: grid;
+  grid-template-rows: 80px 4fr;
+  height: 100vh;
+}
+
+.header-bar {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(223, 39, 39);
+}
+
+.header-name {
+  display: grid;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 0, 82);
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  place-items: center;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  color: rgb(241, 201, 201);
+  background-color: rgb(0, 0, 82);
+}
+
+.header-main {
+  display: grid;
+  place-items: center;
+  color: rgb(0, 0, 82);
+  background-color: rgb(241, 201, 201);
+}
+
+.header-main h1 {
+  letter-spacing: 0.05em;
+}
+
+.header-main h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* --- ABOUT ME --- */
+.about-me {
+  padding: 30px 0;
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 100px 2fr;
+  place-items: center;
+  color: rgb(241, 201, 201);
+  background-color: rgb(0, 0, 82);
+}
+
+.about-me h2,
+.about-me h3 {
+  color: rgb(223, 39, 39);
+}
+
+/* --- PORTFOLIO --- */
+.portfolio {
+  padding: 30px 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 2fr;
+  place-items: center;
+  color: rgb(0, 0, 82);
+  background-color: rgb(241, 201, 201);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 150px;
+}
+
+.projects {
+  width: 250px;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.projects h3 {
+  color: rgb(223, 39, 39);
+}
+
+/* --- EXPERIENCE --- */
+.experience {
+  padding: 30px 0;
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 100px 2fr;
+  place-items: center;
+  color: rgb(241, 201, 201);
+  background-color: rgb(0, 0, 82);
+}
+
+.job-experiences-container {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.experience h2,
+.job-experiences h3 {
+  color: rgb(223, 39, 39);
+}
+
+/* --- FOOTER --- */
+footer {
+  height: 50px;
+  display: grid;
+  align-items: center;
+  padding-left: 10px;
+  color: rgb(0, 0, 82);
+  background-color: rgb(223, 39, 39);
+}
